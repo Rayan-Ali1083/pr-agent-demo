@@ -14,4 +14,6 @@ def multiply(a, b):
 
 def divide(a, b):
     # BUG: no handling for division by zero
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
     return a / b
